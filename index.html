@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,154 +13,168 @@
     <link href="css/steps.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
     <link href="css/comments.css" rel="stylesheet">
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="#" class="navbar-brand">Brand</a> </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="#" class="navbar-brand">Brand</a> </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
+    <div class="alert alert-info" id="flashes">
+      ERROR 
+    </div>
     <div class="container">
-        <div class="page-header">
-            <h1>Pancakes <small>with Bootstrap and jQuery</small></h1>
-        </div>
-        <div class="row">
-        	<div class="col-md-4">
-                <h2>Ingredients</h2>
+      <div class="page-header">
+        <h1>Pancakes <small>with Bootstrap and jQuery</small></h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Ingredients</h2>
 
-                <ul class="ingredients">
-                    <li><span data-portion="1">1 </span> Egg</li>
-                    <li><span data-portion="400">400</span> Grams of Plain Floor</li>
-                    <li><span data-portion="1">1</span> Bar of Butter</li>
-                    <li><span data-portion="2">2 </span> Table Spoons Sugar</li>
-                    <li><span data-portion="2">2 </span> teaspoons baking powder</li>
-                    <li>
-                        <spandata-portion="1">1 </span> Cup Milk</li>
-                </ul>
-                <input type="text" id="text-field">
+          <ul class="ingredients">
+            <li><span data-portion="1">1 </span> Egg</li>
+            <li><span data-portion="400">400</span> Grams of Plain Floor</li>
+            <li><span data-portion="1">1</span> Bar of Butter</li>
+            <li><span data-portion="2">2 </span> Table Spoons Sugar</li>
+            <li><span data-portion="2">2 </span> teaspoons baking powder</li>
+            <li>
+              <spandata-portion="1">1 </span> Cup Milk</li>
+          </ul>
+          <label for="calculate">Calculate Servings</label>
+          <input type="number" class="form-control" id="calculate">
+        </div>
+        <div class="col-md-8 clearfix ">
+          <div class="row " id="slider">
+            <img class="active sliderimages" src="http://www.dreistern-food.de/wp-content/uploads/American-Pancakes1.png" />
+            <img class="sliderimages" src="http://www.ndtv.com/cooks/images/pancakes.jpg" />
+            <img class="sliderimages" src="https://d1jqyzxlehme6l.cloudfront.net/images/1223/61/3/7_4/american-pancakes.jpg" />
+            <img class="sliderimages" src="http://www.mondamin.de/images/Recipes/93_500x380.jpg" />
+          </div>
+          <div class="row clearfix ">
+            <div class="col-md-12 sliderthumb clearfix">
+              <img class=" thumbnail sliderthumbnail" src="http://www.dreistern-food.de/wp-content/uploads/American-Pancakes1.png" />
+              <img class=" thumbnail sliderthumbnail" src="http://www.ndtv.com/cooks/images/pancakes.jpg" />
+              <img class="thumbnail sliderthumbnail" src="https://d1jqyzxlehme6l.cloudfront.net/images/1223/61/3/7_4/american-pancakes.jpg"
+                                                     />
+              <img class="thumbnail sliderthumbnail" src="http://www.mondamin.de/images/Recipes/93_500x380.jpg" />
             </div>
-        	<div class="col-md-8 clearfix ">
-                <div class="row " id="slider">
-                    <img class="active sliderimages" src="http://www.dreistern-food.de/wp-content/uploads/American-Pancakes1.png" />
-                    <img class="sliderimages" src="http://www.ndtv.com/cooks/images/pancakes.jpg" />
-                    <img class="sliderimages" src="https://d1jqyzxlehme6l.cloudfront.net/images/1223/61/3/7_4/american-pancakes.jpg" />
-                    <img class="sliderimages" src="http://www.mondamin.de/images/Recipes/93_500x380.jpg" />
-                </div>
-                <div class="row clearfix ">
-                    <div class="col-md-12 sliderthumb clearfix">
-                        <img class=" thumbnail sliderthumbnail" src="http://www.dreistern-food.de/wp-content/uploads/American-Pancakes1.png" />
-                        <img class=" thumbnail sliderthumbnail" src="http://www.ndtv.com/cooks/images/pancakes.jpg" />
-                        <img class="thumbnail sliderthumbnail" src="https://d1jqyzxlehme6l.cloudfront.net/images/1223/61/3/7_4/american-pancakes.jpg"
-                        />
-                        <img class="thumbnail sliderthumbnail" src="http://www.mondamin.de/images/Recipes/93_500x380.jpg" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <div class="row steps">
-      <div class="row  step" id="one">
-        <div class="col-md-2">
-          <h2>1</h2>
-        </div>
-        <div class="col-md-8">
-          <h3>Wet Ingredients</h3>
-          <p>Preheat oven to 200 degrees; have a baking sheet or heatproof platter ready to keep cooked pancakes warm in the oven. In a small bowl, whisk together flour, sugar, baking powder, and salt; set aside.</p>
-        </div>
-        <div class="col-md-2">
-          <button class="btn btn-primary btn-lg">Next</button>
-        </div>
-      </div>
-      <div class="row  step hidden" id="two">
-        <div class="col-md-2">
-          <h2>2</h2>
-        </div>
-        <div class="col-md-8">
-          <h3>Dry Ingredients</h3>
-          <p>In a medium bowl, whisk together milk, butter (or oil), and egg. Add dry ingredients to milk mixture; whisk until just moistened (do not overmix; a few small lumps are fine).</p>
-        </div>
-        <div class="col-md-2">
-          <button class="btn btn-primary btn-lg">Next</button>
-        </div>
-      </div>
-      <div class="row  step hidden" id="three">
-        <div class="col-md-2">
-          <h2>3</h2>
-        </div>
-        <div class="col-md-8">
-          <h3>Setting The Pan </h3>
-          <p>Heat a large skillet (nonstick or cast-iron) or griddle over medium. Fold a sheet of paper towel in half, and moisten with oil carefully rub skillet with oiled paper towel.</p>
-        </div>
-        <div class="col-md-2">
-          <button class="btn btn-primary  btn-lg">Next</button>
-        </div>
-      </div>
-      <div class="row step hidden" id="four">
-        <div class="col-md-2">
-          <h2>4</h2>
-        </div>
-        <div class="col-md-8">
-          <h3>Cooking</h3>
-          <p>Cook until surface of pancakes have some bubbles and a few have burst, 1 to 2 minutes. Flip carefully with a thin spatula, and cook until browned on the underside, 1 to 2 minutes more. Transfer to a baking sheet or platter; cover loosely with
-            aluminum foil, and keep warm in oven.</p>
-        </div>
-        <div class="col-md-2">
-          <button class="btn btn-success btn-lg">Done</button></div>
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col-md-12 progress">
-        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-    </div>
-
-            <!-- Comment section -->
-    <div class="row ">
-      <!--profile pic  -->
-      <div class="col-md-2">
-        <img src="http://via.placeholder.com/80x80" alt="oops" id="comments_thump_pic">
-      </div>
-      <!-- text field for the comment -->
-      <form>
-        <div class="col-md-8">
-          <div class="form-group">
-            <textarea class="form-control resizeNot " id="Text_area_input" rows="3"></textarea>
           </div>
         </div>
-        <!--col-md-1o -->
-        <div class="col-md-2">
-          <button type="button" name="button" class="btn btn-lg btn-default comments_submit_btn " id="comments_submit_btn_js">Submit!</button>
+      </div>
+
+
+      <div class="row steps">
+        <div class="col-xs-12 step" id="one">
+          <div class="col-md-1">
+            <h2>1</h2>
+          </div>
+          <div class="col-md-10">
+            <h3>Wet Ingredients</h3>
+            <p>Preheat oven to 200 degrees; have a baking sheet or heatproof platter ready to keep cooked pancakes warm in the oven. In a small bowl, whisk together flour, sugar, baking powder, and salt; set aside.</p>
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-primary btn-lg">Next</button>
+          </div>
         </div>
-      </form>
-
-    </div>
-
-
-    <div class="row  hidden">
-      <!-- profile pic -->
-      <div class="col-md-2">
-        <img src="http://via.placeholder.com/80x80" id="comments_thump_pic" alt="oops">
+        <div class="col-xs-12  step hidden" id="two">
+          <div class="col-md-1">
+            <h2>2</h2>
+          </div>
+          <div class="col-md-10">
+            <h3>Dry Ingredients</h3>
+            <p>In a medium bowl, whisk together milk, butter (or oil), and egg. Add dry ingredients to milk mixture; whisk until just moistened (do not overmix; a few small lumps are fine).</p>
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-primary btn-lg">Next</button>
+          </div>
+        </div>
+        <div class="col-xs-12 step hidden" id="three">
+          <div class="col-md-1">
+            <h2>3</h2>
+          </div>
+          <div class="col-md-10">
+            <h3>Setting The Pan </h3>
+            <p>Heat a large skillet (nonstick or cast-iron) or griddle over medium. Fold a sheet of paper towel in half, and moisten with oil carefully rub skillet with oiled paper towel.</p>
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-primary  btn-lg">Next</button>
+          </div>
+        </div>
+        <div class="col-xs-12 step hidden" id="four">
+          <div class="col-md-1">
+            <h2>4</h2>
+          </div>
+          <div class="col-md-10">
+            <h3>Cooking</h3>
+            <p>Cook until surface of pancakes have some bubbles and a few have burst, 1 to 2 minutes. Flip carefully with a thin spatula, and cook until browned on the underside, 1 to 2 minutes more. Transfer to a baking sheet or platter; cover loosely with
+            aluminum foil, and keep warm in oven.</p>
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-success btn-lg">Done</button></div>
+        </div>
       </div>
-      <!-- the comment perview -->
-      <div class="col-md-10">
-        <textarea class="form-control resizeNot" id="" rows="3" readonly></textarea>
+      <div class="row ">
+        <div class="col-md-12 progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+
+      <section>
+        <h1>More Impressions
+          <button class="btn btn-primary" id="ajax_button">More Impressions</button>
+        </h1>
+        <div class="row" id="images">
+        </div>
+      </section>
+      
+      <h1>Comments</h1>
+      <!-- Comment section -->
+      <div class="row">
+        <!--profile pic  -->
+        <div class="col-md-2">
+          <img src="http://via.placeholder.com/80x80" alt="oops" id="comments_thump_pic">
+        </div>
+        <!-- text field for the comment -->
+        <form>
+          <div class="col-md-8">
+            <div class="form-group">
+              <textarea class="form-control resizeNot " id="Text_area_input" rows="3"></textarea>
+            </div>
+          </div>
+          <!--col-md-1o -->
+          <div class="col-md-2">
+            <button type="button" name="button" class="btn btn-lg btn-default comments_submit_btn " id="comments_submit_btn_js">Submit!</button>
+          </div>
+        </form>
+
+      </div>
+
+
+      <div class="row  hidden">
+        <!-- profile pic -->
+        <div class="col-md-2">
+          <img src="http://via.placeholder.com/80x80" id="comments_thump_pic" alt="oops">
+        </div>
+        <!-- the comment perview -->
+        <div class="col-md-10">
+          <textarea class="form-control resizeNot" id="" rows="3" readonly></textarea>
+        </div>
       </div>
     </div>
-  </div>
     </div>
     <div class="container-fluid">
-    	<div class="container">
-    		footer
-    	</div>
+      <div class="container">
+        footer
+      </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -168,8 +182,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/steps.js"></script>
+    <script src="js/ajax.js"></script>
     <script src="js/ingredients.js"></script>
     <script src="js/comments.js"></script>
-</body>
+  </body>
 
 </html>

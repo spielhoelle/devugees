@@ -20,7 +20,6 @@ $(document).ready(function () {
         } else {
             index++;
         }
-        console.log(index);
 
         var images = $('.row').find('img');
         var img = images.eq(index);

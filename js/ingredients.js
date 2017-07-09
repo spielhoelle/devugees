@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('#text-field').keyup(function (event) {
-        var portions = $('#text-field').val();
+    $('#calculate').keyup(function (event) {
+        var portions = $(this).val();
         console.log(spanValue)
         console.log(portions)
         if (portions != 0) {
