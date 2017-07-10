@@ -1,3 +1,14 @@
+$('#ajax_partial_button').on('click', function () {
+  $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+    if(statusTxt == "success")
+      alert("External content loaded successfully!");
+    if(statusTxt == "error")
+      alert("Error: " + xhr.status + ": " + xhr.statusText);
+  });
+});
+
+
+
 var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 $('#ajax_button').on('click', function () {
   var that = $(this);
